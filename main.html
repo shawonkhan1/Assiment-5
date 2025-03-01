@@ -32,7 +32,7 @@
     <!-- rightside nav -->
 
         
-       <button class="btn text-[20px] text-white  bg-blue-600">Back To Desk</button>
+       <button id="index" class="btn text-[20px] text-white  bg-blue-600">Back To Desk</button>
       
      </div>
 
@@ -49,7 +49,7 @@
 
  <main>
     <h1 class="text-[36px] text-center font-bold pt-3 pb-3">Blogs</h1>
-
+<!-- 1st -->
     <div class="bg-white p-[10px] mb-[30px] rounded-[10px]">
         <h1 class="text-[30px] font-bold">Qustion-1:What are the differnt ways to select an element in the DOM?</h1>
         <hr class="border-black mt-5 mb-5 border-dashed">
@@ -87,6 +87,26 @@
             parent.insertBefore(newDiv, parent.firstChild); <br> new element  remove- parent.removeChild(newDiv);</p>
     </div>
 
+    <button id="dark" class="btn mt-[30px] hover:bg-green-300 bg-slate-500 text-white font-bold text-[20px] ">DarkTheme</button>
+
  </main>
+
+ <!-- // back to deck a click korle ager index a nie asbe -->
+<script>
+    document.getElementById('index').addEventListener('click',function(){
+    window.location.href = 'test.html';
+})
+
+
+// dark theme ar jnno
+let color = ['#2c2c2c','#cecfd1']
+let curentColor = 0;
+document.getElementById('dark').addEventListener('click',function(){
+    // document.body.style.backgroundColor = '#2c2c2c';
+    document.body.style.backgroundColor = color[curentColor];
+    curentColor = (curentColor + 1) % color.length;
+})
+</script>
+
 </body>
 </html>
