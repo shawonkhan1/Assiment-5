@@ -21,8 +21,8 @@ function updateValues(button) {
 }
 
 
-let buttons = document.querySelectorAll("button");
-buttons.forEach(function(button) {
+    let buttons = document.querySelectorAll("button");
+    buttons.forEach(function(button) {
     button.addEventListener("click", function() {
         updateValues(button);
     });
@@ -81,7 +81,7 @@ document.getElementById('btn6').addEventListener('click',function(){
 
 // history dlte hoie jabe
 document.getElementById('clear').addEventListener('click',function(){
-    document.getElementById('hide').style.display = 'none'
+    document.getElementById('clear-history').style.display = 'none'
 })
 
 
