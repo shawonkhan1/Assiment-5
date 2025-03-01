@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev-Board-Main</title>
+
+     <!-- Tailwind and DasyUI CDN -->
+     
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="pl-[200px] pr-[200px] bg-[#cecfd1] pb-[30px] h-[1260px]">
+
+    <!-- header strt -->
+    <header class="pt-4">
+        <!-- nav start -->
+    <section class="bg-[#F4F7FF] rounded-[16px] ">
+
+    <div class="flex justify-between p-[18px] ">
+
+           <!-- nav container -->
+    <div class="flex gap-[11px]">
+        <div>
+            <img src="./assets/logo.png" alt="">
+        </div>
+        <div>
+            <h1 class="md:text-[35px] text-[20px] pt-[10px] md:pt-[0px] font-normal">Dev<span class="font-bold md:text-[35px]">Board</span> </h1>
+        </div>
+    </div>
+    <!-- rightside nav -->
+
+        
+       <button class="btn text-[20px] text-white  bg-blue-600">Back To Desk</button>
+      
+     </div>
+
+
+    </div>
+ 
+    
+
+
+    </section>
+<!-- nav end -->
+ </header>
+ <!-- header end -->
+
+ <main>
+    <h1 class="text-[36px] text-center font-bold pt-3 pb-3">Blogs</h1>
+
+    <div class="bg-white p-[10px] mb-[30px] rounded-[10px]">
+        <h1 class="text-[30px] font-bold">Qustion-1:What are the differnt ways to select an element in the DOM?</h1>
+        <hr class="border-black mt-5 mb-5 border-dashed">
+        <p class="text-[20px]">we are select an element of DOM- getElementById(),
+            getElementsByClassName(),
+            getElementsByTagName(),
+            querySelector(),
+            querySelectorAll().
+            </p>
+    </div>
+    <!-- 2nd -->
+    <div class="bg-white p-[10px] mb-[30px] rounded-[10px]">
+        <h1 class="text-[30px] font-bold">Qustion-2:What is the difference between innerHTML, innerText, and textContent ?</h1>
+        <hr class="border-black mt-5 mb-5 border-dashed">
+        <p class="text-[20px]">InnnerHTML Take All Html Tags,innerText take just tag text,textContent take all text without tags</p>
+    </div>
+     <!-- 3rd -->
+     <div class="bg-white p-[10px] mb-[30px] rounded-[10px]">
+        <h1 class="text-[30px] font-bold">Qustion-3:What is event delegation in the DOM?</h1>
+        <hr class="border-black mt-5 mb-5 border-dashed">
+        <p class="text-[20px]">Event Delegation is a technique where an event listener is added to a parent element to handle events on its child elements using event bubbling.</p>
+    </div>
+     <!-- 4th  -->
+     <div class="bg-white p-[10px] mb-[30px] rounded-[10px]">
+        <h1 class="text-[30px] font-bold">Qustion-4: What is event bubbling in the DOM?</h1>
+        <hr class="border-black mt-5 mb-5 border-dashed">
+        <p class="text-[20px]">Event Bubbling is a DOM event propagation method where an event starts from the target element and bubbles up to its ancestors (parent, grandparent, etc.).</p>
+    </div>
+     <!-- 5th -->
+     <div class="bg-white p-[10px] rounded-[10px]">
+        <h1 class="text-[30px] font-bold">Qustion-5:How do you create, add, and remove elements using JavaScript?</h1>
+        <hr class="border-black mt-5 mb-5 border-dashed">
+        <p class="text-[20px]">new element create- let newDiv = document.createElement('div');
+            newDiv.textContent = 'Hello!'; <br> new element add- document.body.appendChild(newDiv); let parent = document.getElementById('container');
+            parent.insertBefore(newDiv, parent.firstChild); <br> new element  remove- parent.removeChild(newDiv);</p>
+    </div>
+
+ </main>
+</body>
+</html>
