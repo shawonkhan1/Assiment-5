@@ -12,7 +12,7 @@
 
 </head>
 
-<body class="pl-[200px] pr-[200px] bg-[#cecfd1] pb-[30px] h-[1260px]">
+<body class="md:pl-[200px] pl-[10px] md:pr-[200px] pr-[10px] bg-[#cecfd1] pb-[30px] md:h-[1460px]">
 
     <!-- nav part strt -->
     <header class="pt-4">
@@ -23,8 +23,8 @@
 
               <!-- nav container -->
        <div class="flex gap-[11px]">
-           <div>
-               <img src="./assets/logo.png" alt="">
+           <div class="">
+               <img src="./assets/logo.png" alt="" >
            </div>
            <div>
                <h1 class="md:text-[35px] text-[20px] pt-[10px] md:pt-[0px] font-normal">Dev<span class="font-bold md:text-[35px]">Board</span> </h1>
@@ -33,9 +33,9 @@
        <!-- rightside nav -->
         <div class="flex md:gap-[44px ] gap-2">
 
-           <div class="flex bg-white rounded-[32px] md:w-[123px] w-[80px] md:pl-5 pl-[10px] h-[40px] md:h-auto md:gap-2">
+           <div class="flex gap-[10px] md:gap-[20px] bg-white rounded-[32px] md:w-[123px] w-[80px] md:pl-5 pl-[10px] h-[40px] md:h-auto md:gap-2">
                <div>
-                  <img  src="./assets/checkbox.png" class="md:h-[40px] pt-[10px]" />
+                  <img  src="./assets/checkbox.png" class="md:h-[40px] h-[30px] pt-[10px]" />
                </div>
                <!-- p ar man ta cng hobe js die -->
                <div>
@@ -60,15 +60,15 @@
 
 
     <!-- main part strt -->
-    <main>
+    <main class="">
         <section class="bg-white mt-[20px] rounded-[12px] p-[15px]">
-            <div class="grid grid-cols-4 gap-2">
+            <div class="grid md:grid-cols-4 gap-2">
      
                 <div class="col-span-3">
-                    <div class="grid grid-cols-4 p-[24px] gap-[24px]">
+                    <div class="grid md:grid-cols-4 md:p-[24px] gap-[20px] md:gap-[24px]">
             
-                        <div class="col-span-1 flex p-[32px] rounded-[12px] bg-[#F4F7FF] gap-[20px]">
-                            <div class="rounded-[50%] bg-white w-[60px] h-[60px] mt-2">
+                        <div class="col-span-1 flex md:p-[32px] rounded-[12px] bg-[#F4F7FF] gap-[20px]">
+                            <div class="rounded-[50%] bg-white w-[60px] md:w-[80px]  h-[60px] mt-2">
                                 <img src="./assets/checkbox.png" alt="" class="p-[20px]">
                             </div>
                             <div>
@@ -87,14 +87,14 @@
                                 <img src="./assets/board.png" alt="">
                              </div>
                              <div>
-                                <h1 class="font-bold text-[24px] text-white">Discover Something <br> New Today!</h1>
+                                <h1 class="font-bold md:text-[24px] text-white">Discover Something <br> New Today!</h1>
                              </div>
                         </div>
                         <!-- end btn of miidle in another pages -->
 
-                        <div class="col-span-1 p-[32px] flex gap-[16px] rounded-[12px] bg-[#F4F7FF]">
-                            <div class="w-[60px] h-[60px] rounded-[50%] mt-2 bg-white">
-                                <img src="./assets/calender.png" class="p-[15px]" alt="">
+                        <div class="col-span-1 md:p-[32px] flex gap-[16px] rounded-[12px] bg-[#F4F7FF]">
+                            <div class="w-[60px] h-[60px] rounded-[50%] mt-2 bg-white md:w-full">
+                                <img src="./assets/calender.png" class="p-[15px] " alt="">
                             </div>
                             <div>
                                 <p id="time" class="text-[24px] font-bold"></p>
@@ -103,8 +103,11 @@
             
                     </div>
             <hr class="mt-[30px] mb-[30px] border-black border-dashed">
+
+
+
                     <!-- shope ease strt 6 card  -->
-                     <div class="grid p-[24px] grid-cols-3 grid-rows-2 gap-[36px]">
+                     <div class="grid md:p-[24px] p-[15px] md:grid-cols-3 md:grid-rows-2 gap-[20px] md:gap-[36px]">
             
                         <!-- 1st -->
                         <div class="p-[24px] bg-[#F4F7FF] rounded-[16px]">
@@ -136,7 +139,7 @@
                             <div class="mb-[16px]"> 
                                 
                                 <p class="border w-[100px] bg-white p-[10px] rounded-[10px]">CloudSync</p>
-                             </div>
+                             </div>                   
                              <h1 class="font-bold mb-[16px] text-[24px]">Add Dark Mode</h1>
                              <p class="p-[16px] rounded-[8px] border-[2px] mb-[16px] bg-[#FFFFFF]">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                              
@@ -257,20 +260,20 @@
                   <!-- left side -->
      
      
-                  <div class=" bg-[#F4F7FF] rounded-[16px] mt-[20px]">
+                  <div class=" bg-[#F4F7FF] m-[15px] md:m-0 rounded-[16px] md:mt-[20px]  w-[340px]">
                     <div class="flex gap-[17px] pb-[15px] justify-center mt-[20px]">
                         <div>
                             <img src="./assets/activity.png" alt="">
                         </div>
                         <div>
-                            <h1 class="font-bold text-[20px] ">Activity Log</h1>
+                            <h1 class="font-bold md:text-[20px] ">Activity Log</h1>
                         </div>
                     </div>
 
                     <!-- clear btn in right side -->
                     <div class="flex justify-center items-center">
                        
-                        <p id="clear" class="border font-bold text-[20px] p-[10px] bg-[#3752FD] text-white rounded-[10px]">Clear History</p>
+                        <p id="clear" class="border font-bold md:text-[20px] p-[10px] bg-[#3752FD] text-white rounded-[10px]">Clear History</p>
                     </div>
                     <hr class=" not border-black border-dashed mt-[20px]">
                     <!-- display none hobe -->
@@ -303,18 +306,6 @@
         </section>
     </main>
  
-    <script>
-        function updateTime() {
-            const currentDate = new Date();
-            const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' };
-            const formattedDate = currentDate.toLocaleDateString('en-US', options);
-            document.getElementById('time').innerHTML = formattedDate;
-        }
-    
-        setInterval(updateTime, 1000);
-        updateTime();
-    </script>
-
 
     <script src="index.js"></script>
 

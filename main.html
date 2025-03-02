@@ -11,17 +11,17 @@
      <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body class="pl-[200px] pr-[200px] bg-[#cecfd1] pb-[30px] h-[1260px]">
+<body class="md:pl-[200px] pl-[10px] pr-[10px] md:pr-[200px] bg-[#cecfd1] pb-[30px] md:h-[1260px]">
 
     <!-- header strt -->
-    <header class="pt-4">
+    <header class="pt-4 ">
         <!-- nav start -->
     <section class="bg-[#F4F7FF] rounded-[16px] ">
 
     <div class="flex justify-between p-[18px] ">
 
            <!-- nav container -->
-    <div class="flex gap-[11px]">
+    <div class="flex md:gap-[11px]">
         <div>
             <img src="./assets/logo.png" alt="">
         </div>
@@ -32,7 +32,7 @@
     <!-- rightside nav -->
 
         
-       <button id="index" class="btn text-[20px] text-white  bg-blue-600">Back To Desk</button>
+       <button id="index" class="btn md:text-[20px] text-white  bg-blue-600">Back To Desk</button>
       
      </div>
 
@@ -48,10 +48,10 @@
  <!-- header end -->
 
  <main>
-    <h1 class="text-[36px] text-center font-bold pt-3 pb-3">Blogs</h1>
+    <h1 class="md:text-[36px] text-[25px] text-center font-bold pt-3 pb-3">Blogs</h1>
 <!-- 1st -->
     <div class="bg-white p-[10px] mb-[30px] rounded-[10px]">
-        <h1 class="text-[30px] font-bold">Qustion-1:What are the differnt ways to select an element in the DOM?</h1>
+        <h1 class="md:text-[30px] text-[20px] font-bold">Qustion-1:What are the differnt ways to select an element in the DOM?</h1>
         <hr class="border-black mt-5 mb-5 border-dashed">
         <p class="text-[20px]">we are select an element of DOM- getElementById(),
             getElementsByClassName(),
@@ -62,32 +62,36 @@
     </div>
     <!-- 2nd -->
     <div class="bg-white p-[10px] mb-[30px] rounded-[10px]">
-        <h1 class="text-[30px] font-bold">Qustion-2:What is the difference between innerHTML, innerText, and textContent ?</h1>
+        <h1 class="md:text-[30px] text-[20px] font-bold">Qustion-2:What is the difference between innerHTML, innerText, and textContent ?</h1>
         <hr class="border-black mt-5 mb-5 border-dashed">
         <p class="text-[20px]">InnnerHTML Take All Html Tags,innerText take just tag text,textContent take all text without tags</p>
     </div>
      <!-- 3rd -->
      <div class="bg-white p-[10px] mb-[30px] rounded-[10px]">
-        <h1 class="text-[30px] font-bold">Qustion-3:What is event delegation in the DOM?</h1>
+        <h1 class="md:text-[30px] text-[20px] font-bold">Qustion-3:What is event delegation in the DOM?</h1>
         <hr class="border-black mt-5 mb-5 border-dashed">
         <p class="text-[20px]">Event Delegation is a technique where an event listener is added to a parent element to handle events on its child elements using event bubbling.</p>
     </div>
      <!-- 4th  -->
      <div class="bg-white p-[10px] mb-[30px] rounded-[10px]">
-        <h1 class="text-[30px] font-bold">Qustion-4: What is event bubbling in the DOM?</h1>
+        <h1 class="md:text-[30px] text-[20px] font-bold">Qustion-4: What is event bubbling in the DOM?</h1>
         <hr class="border-black mt-5 mb-5 border-dashed">
         <p class="text-[20px]">Event Bubbling is a DOM event propagation method where an event starts from the target element and bubbles up to its ancestors (parent, grandparent, etc.).</p>
     </div>
      <!-- 5th -->
-     <div class="bg-white p-[10px] rounded-[10px]">
-        <h1 class="text-[30px] font-bold">Qustion-5:How do you create, add, and remove elements using JavaScript?</h1>
+     <div class="bg-white p-[10px] mb-[30px] rounded-[10px] ">
+        <h1 class="md:text-[30px] text-[20px] font-bold">Qustion-5:How do you create, add, and remove elements using JavaScript?</h1>
         <hr class="border-black mt-5 mb-5 border-dashed">
         <p class="text-[20px]">new element create- let newDiv = document.createElement('div');
             newDiv.textContent = 'Hello!'; <br> new element add- document.body.appendChild(newDiv); let parent = document.getElementById('container');
             parent.insertBefore(newDiv, parent.firstChild); <br> new element  remove- parent.removeChild(newDiv);</p>
     </div>
+    
+    
 
-    <button id="dark" class="btn mt-[30px] hover:bg-green-300 bg-slate-500 text-white font-bold text-[20px] ">DarkTheme</button>
+
+
+    <button id="dark" class="btn md:mt-[30px] hover:bg-green-300 bg-slate-500 text-white font-bold text-[20px] ">DarkTheme</button>
 
  </main>
 

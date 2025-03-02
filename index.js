@@ -84,5 +84,16 @@ document.getElementById('clear').addEventListener('click',function(){
     document.getElementById('clear-history').style.display = 'none'
 })
 
+// date dkanor jnno
+function updateTime() {
+    const currentDate = new Date();
+    const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' };
+    const formattedDate = currentDate.toLocaleDateString('en-US', options);
+    document.getElementById('time').innerHTML = formattedDate;
+}
+
+setInterval(updateTime, 1000);
+updateTime();
+
 
 
