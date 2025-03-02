@@ -1,3 +1,5 @@
+
+
 // 6btn clik and work
 function updateValues(button) {
     let value1 = document.getElementById("value1");
@@ -94,6 +96,9 @@ function updateTime() {
 
 setInterval(updateTime, 1000);
 updateTime();
+
+
+
 
 
 

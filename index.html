@@ -93,11 +93,11 @@
                         <!-- end btn of miidle in another pages -->
 
                         <div class="col-span-1 md:p-[32px] flex md:flex-row flex-col gap-[16px] rounded-[12px] bg-[#F4F7FF]">
-                            <div class="w-[60px] h-[60px]  rounded-[50%] mt-2 bg-white mx-auto">
-                                <img src="./assets/calender.png" class="p-[15px]  " alt="">
+                            <div class="flex justify-center items-center  rounded-[50%] mt-2 bg-white mx-auto">
+                                <img src="./assets/calender.png" class=" size-10 " alt="">
                             </div>
                             <div>
-                                <p id="time" class="text-[24px] font-bold md:p-[0px] p-[24px]"></p>
+                                <p id="time" class="text-[18px] font-bold md:p-[0px] p-[24px]"></p>
                             </div>
                         </div>
             
@@ -279,23 +279,23 @@
                     <!-- display none hobe -->
                      <div id="clear-history">
                         <div id="none1" class="bg-white hidden mb-[15px] m-[20px] mt-2 rounded-[12px] p-4">
-                            <p>You have Complete The Fix Mobile Button Issue at 12:48:15 PM</p>
+                            <p>You have Complete The Fix Mobile Button Issue at <p class="current-time"></p> </p>
                          </div>
             
                          <div id="none2" class="bg-white hidden mb-[15px] m-[20px] mt-2 rounded-[12px] p-4">
-                            <p>You have Complete Add Dark Mode at 12:48:15 PM</p>
+                            <p>You have Complete Add Dark Mode at <p class="current-time"></p> </p>
                          </div>
                          <div id="none3" class="bg-white hidden mb-[15px] m-[20px] mt-2 rounded-[12px] p-4">
-                            <p>You have Complete The Optimize Home page at 12:48:15 PM</p>
+                            <p>You have Complete The Optimize Home page at <p class="current-time"></p> </p>
                          </div>
                          <div id="none4" class="bg-white hidden mb-[15px] m-[20px] mt-2 rounded-[12px] p-4">
-                            <p>You have Complete The Add new emoji at 12:48:15 PM</p>
+                            <p>You have Complete The Add new emoji at <p class="current-time"></p> </p>
                          </div>
                          <div id="none5" class="bg-white hidden mb-[15px] m-[20px] mt-2 rounded-[12px] p-4">
-                            <p>You have Complete The Intergrate OpenAI AP at 12:48:15 PM</p>
+                            <p>You have Complete The Intergrate OpenAI AP at <p class="current-time"></p> </p>
                          </div>
                          <div id="none6" class="bg-white hidden mb-[15px] m-[20px] mt-2 rounded-[12px] p-4">
-                            <p>You have Complete The Improve Job searching at 12:48:15 PM</p>
+                            <p>You have Complete The Improve Job searching at <p class="current-time"></p> </p>
                          </div>
                      </div>
                     
@@ -305,9 +305,27 @@
             </div>
         </section>
     </main>
- 
 
-    <script src="index.js"></script>
+<script>
+   function updateTime() {
+    const currentDate = new Date();
+    const options = { hour: '2-digit', minute: '2-digit' };
+    const formattedDate = currentDate.toLocaleTimeString('en-US', options);
+    
+   
+    const timeElements = document.querySelectorAll('.current-time');
+    timeElements.forEach((element) => {
+        element.innerHTML = formattedDate;
+    });
+}
+
+setInterval(updateTime, 1000);
+updateTime();
+    
+</script>
+    
+
+<script src="index.js"></script>
 
     
 
